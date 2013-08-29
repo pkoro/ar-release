@@ -1,9 +1,9 @@
 Name:		ar-release
 Version:	1.0.0
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Repository files for ar mini project
-
 Group:		EGI/SA4
+BuildArch:	noarch
 License:	ASL 2.0
 URL:		http://code.grnet.gr/
 Source0:	%{name}-%{version}.tar.gz
@@ -42,5 +42,7 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Thu Aug 26 2013 Paschalis Korosoglou <pkoro@grid.auth.gr> - 1.0.0-1%{?dist}
+* Thu Aug 29 2013 Paschalis Korosoglou <pkoro@grid.auth.gr> - 1.0.0-2%{?dist}
+- Added buildarch to noarch
+* Mon Aug 26 2013 Paschalis Korosoglou <pkoro@grid.auth.gr> - 1.0.0-1%{?dist}
 - Initial release package
