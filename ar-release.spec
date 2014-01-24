@@ -1,6 +1,6 @@
 Name:		ar-release
 Version:	1.0.0
-Release:	2%{?dist}
+Release:	3%{?dist}
 Summary:	Repository files for ar mini project
 Group:		EGI/SA4
 BuildArch:	noarch
@@ -29,7 +29,7 @@ rm -rf %{buildroot}
 
 install -dm 755 $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
 install -pm 644 repos.d/EGI-trustanchors.repo $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
-install -pm 644 repos.d/arstats.repo%{?dist} $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d/arstats.repo
+install -pm 644 repos.d/arstats.repo $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d/arstats.repo
 
 %clean
 rm -rf %{buildroot}
