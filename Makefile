@@ -5,7 +5,6 @@ FILES=${SPECFILE} ${PKG_FILES}
 
 PKGVERSION=$(shell grep -s '^Version:' $(SPECFILE) | awk '{print $$2}')
 
-
 sources: ${FILES}
 	rm -rf dist
 	mkdir -p dist/${PKGNAME}-${PKGVERSION}
