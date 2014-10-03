@@ -1,6 +1,6 @@
 Name:		ar-release
-Version:	1.0.0
-Release:	3%{?dist}
+Version:	1.0.1
+Release:	1%{?dist}
 Summary:	Repository files for ar mini project
 Group:		EGI/SA4
 BuildArch:	noarch
